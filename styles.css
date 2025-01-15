@@ -1,0 +1,152 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+/* Main container */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Left sidebar with image */
+.image-sidebar {
+    width: 40%;
+    background-color: #333;
+    position: relative;
+}
+
+/* Logo banner */
+.logo-banner {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-banner img {
+    height: 100px;
+}
+
+.logo-banner h1 {
+    color: white;
+    font-size: 5rem;
+}
+
+/* Right side content */
+.form-content {
+    width: 60%;
+    padding: 2rem;
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-content h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.form-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Form styles */
+.form-section {
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    margin: 2rem 0;
+}
+
+.form-section h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #333;
+    letter-spacing: 0.1em;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.2);
+}
+
+.form-group input:invalid {
+    border-color: #dc2626;
+}
+
+/* Submit button and footer */
+.form-footer {
+    padding: 0 2rem;
+}
+
+button[type="submit"] {
+    background-color: #596D48;
+    color: white;
+    padding: 0.8rem 2.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+button[type="submit"]:hover {
+    background-color: #4c5e3f;
+}
+
+.form-footer p {
+    font-size: 1rem;
+}
+
+.form-footer a {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+} 
